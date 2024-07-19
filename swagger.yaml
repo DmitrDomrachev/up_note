@@ -4,7 +4,7 @@ info:
   description: API для приложения UpNote.
   version: 1.0.0
 servers:
-  - url: https://up-note-eldsjg5-dmitrdomrachev.globeapp.dev
+  - url: https://up-note.globeapp.dev
 paths:
   /onboarding:
     get:
