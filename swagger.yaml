@@ -8,7 +8,7 @@ servers:
 paths:
   /onboarding:
     get:
-      summary: Получить информацию о страницах onboarding
+      summary: Получить информацию о страницах onboarding.
       responses:
         '200':
           description: Успешный ответ с информацией о страницах onboarding.
