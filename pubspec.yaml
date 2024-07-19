@@ -1,6 +1,6 @@
 name: up_note
-description: An new Dart Frog application
-version: 0.0.1+2
+description: Server app for UpNote
+version: 0.0.2+2
 publish_to: none
 
 environment:
