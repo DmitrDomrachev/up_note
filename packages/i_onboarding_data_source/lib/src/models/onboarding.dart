@@ -15,7 +15,8 @@ class OnboardingDto {
   const OnboardingDto({required this.pagesLength, required this.pages});
 
   /// Converts a JSON map to an instance of [OnboardingPageDto].
-  factory OnboardingDto.fromJson(Map<String, dynamic> json) => _$OnboardingDtoFromJson(json);
+  factory OnboardingDto.fromJson(Map<String, dynamic> json) =>
+      _$OnboardingDtoFromJson(json);
 
   /// The total number of pages in the onboarding process.
   final int pagesLength;
