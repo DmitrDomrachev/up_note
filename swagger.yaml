@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: UpNote API
+  description: API для приложения UpNote.
+  version: 1.0.0
+servers:
+  - url: https://up-note-eldsjg5-dmitrdomrachev.globeapp.dev
+paths:
+  /onboarding:
+    get:
+      summary: Получить информацию о страницах onboarding.
+      responses:
+        '200':
+          description: Успешный ответ с информацией о страницах onboarding.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  pagesLength:
+                    type: integer
+                    example: 1
+                  pages:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                          example: Управляй своими задачами
+                        description:
+                          type: string
+                          example: Вы можете легко управлять всеми своими задачами в UpTodo
+                        image:
+                          type: string
+                          example: '<svg width="213" height="278" viewBox="0 0 213 278" fill="none" xmlns="http://www.w3.org/2000/svg">...</svg>'
+                required:
+                  - pageCount
+                  - pages
+      tags:
+        - onboarding
