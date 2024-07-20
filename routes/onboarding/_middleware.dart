@@ -1,7 +1,6 @@
 import 'package:dart_frog/dart_frog.dart';
-import 'package:in_memory_onboarding_data_source/in_memory_onboarding_data_source.dart';
-import 'package:onboarding_data_source/onboarding_data_source.dart';
 import 'package:shelf_cors_headers/shelf_cors_headers.dart' as shelf;
+import 'package:up_note/features/onboarding/data/data_source/onboarding_datasource.dart';
 
 const _onboardingDataSource = InMemoryOnboardingDataSource();
 
