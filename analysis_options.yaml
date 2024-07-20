@@ -3,7 +3,12 @@ analyzer:
   exclude:
     - build/**
     - tools/bricks/**/__brick__/**
+    - 'lib/**/*.g.dart'
+    - 'lib/**.freezed.dart'
 
+  errors:
+    invalid_annotation_target: ignore
+    
 linter:
   rules:
     file_names: false

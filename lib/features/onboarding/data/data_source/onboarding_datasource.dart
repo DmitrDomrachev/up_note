@@ -4,7 +4,7 @@ import 'package:up_note/features/onboarding/data/dtos/onboarding.dart';
 
 /// This is the interface for the OnboardingDataSource.
 /// It defines the contract for the data source used in the onboarding feature.
-abstract interface class OnboardingDataSource {
+abstract interface class IOnboardingDataSource {
   /// Fetches the onboarding data.
   ///
   /// Returns a `Future` that completes with an `OnboardingDto` object
@@ -14,18 +14,17 @@ abstract interface class OnboardingDataSource {
   Future<OnboardingDto> getOnboarding();
 }
 
-/// An in-memory implementation of [OnboardingDataSource].
+/// An in-memory implementation of [IOnboardingDataSource].
 ///
 /// This class provides an in-memory storage mechanism for onboarding data,
 /// allowing for quick retrieval without the need for external data sources
 /// like a network or database. It's useful for testing or when a simple,
 /// static onboarding experience is needed.
-class InMemoryOnboardingDataSource implements OnboardingDataSource {
+class InMemoryOnboardingDataSource implements IOnboardingDataSource {
   /// Constructs an instance of [InMemoryOnboardingDataSource].
   const InMemoryOnboardingDataSource();
 
   static const _onboarding = OnboardingDto(
-    pagesLength: 3,
     pages: [
       OnboardingPageDto(
         title: 'Управляй своими задачами',
