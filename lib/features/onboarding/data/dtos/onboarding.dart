@@ -10,16 +10,12 @@ part 'onboarding.g.dart';
 class OnboardingDto {
   /// Constructs an [OnboardingDto].
   ///
-  /// Requires the total number of pages ([pagesLength]) and a list of page
-  /// details ([pages]).
-  const OnboardingDto({required this.pagesLength, required this.pages});
+  /// Requires a list of page details ([pages]).
+  const OnboardingDto({required this.pages});
 
   /// Converts a JSON map to an instance of [OnboardingPageDto].
   factory OnboardingDto.fromJson(Map<String, dynamic> json) =>
       _$OnboardingDtoFromJson(json);
-
-  /// The total number of pages in the onboarding process.
-  final int pagesLength;
 
   /// A list of [OnboardingPageDto] objects representing each page in the
   /// onboarding.

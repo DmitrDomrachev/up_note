@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:dart_frog/dart_frog.dart';
-import 'package:up_note/features/onboarding/data/data_source/onboarding_datasource.dart';
+import 'package:up_note/features/onboarding/domain/repositories/i_onboarding_repository.dart';
 
 FutureOr<Response> onRequest(RequestContext context) async {
   switch (context.request.method) {
@@ -19,6 +19,6 @@ FutureOr<Response> onRequest(RequestContext context) async {
 }
 
 Future<Response> _get(RequestContext context) async {
-  final dataSource = context.read<OnboardingDataSource>();
-  return Response.json(body: await dataSource.getOnboarding());
+  final repository = context.read<IOnboardingRepository>();
+  return Response.json(body: await repository.getOnboarding());
 }

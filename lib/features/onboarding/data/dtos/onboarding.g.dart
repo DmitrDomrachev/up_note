@@ -8,7 +8,6 @@ part of 'onboarding.dart';
 
 OnboardingDto _$OnboardingDtoFromJson(Map<String, dynamic> json) =>
     OnboardingDto(
-      pagesLength: (json['pagesLength'] as num).toInt(),
       pages: (json['pages'] as List<dynamic>)
           .map((e) => OnboardingPageDto.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -16,7 +15,6 @@ OnboardingDto _$OnboardingDtoFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$OnboardingDtoToJson(OnboardingDto instance) =>
     <String, dynamic>{
-      'pagesLength': instance.pagesLength,
       'pages': instance.pages,
     };
 
