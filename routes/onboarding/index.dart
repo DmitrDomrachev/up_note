@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:dart_frog/dart_frog.dart';
-import 'package:onboarding_data_source/onboarding_data_source.dart';
+import 'package:up_note/features/onboarding/data/data_source/onboarding_datasource.dart';
 
 FutureOr<Response> onRequest(RequestContext context) async {
   switch (context.request.method) {

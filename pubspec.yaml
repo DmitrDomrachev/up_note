@@ -8,10 +8,7 @@ environment:
 
 dependencies:
   dart_frog: ^1.0.0
-  in_memory_onboarding_data_source:
-    path: packages/in_memory_onboarding_data_source
-  onboarding_data_source:
-    path: packages/i_onboarding_data_source
+  json_annotation: ^4.9.0
   shelf_cors_headers: ^0.1.5
 
 dev_dependencies:

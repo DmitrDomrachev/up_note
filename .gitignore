@@ -14,3 +14,7 @@ build/
 
 # Test related files
 coverage/
+
+# Files created by Mason
+.mason/
+mason-lock.yaml
