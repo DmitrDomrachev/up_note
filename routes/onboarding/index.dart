@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:dart_frog/dart_frog.dart';
-import 'package:up_note/features/onboarding/domain/repositories/i_onboarding_repository.dart';
+import 'package:up_note/features/onboarding/di/onboarding_scope.dart';
 
 FutureOr<Response> onRequest(RequestContext context) async {
   switch (context.request.method) {
@@ -19,6 +19,7 @@ FutureOr<Response> onRequest(RequestContext context) async {
 }
 
 Future<Response> _get(RequestContext context) async {
-  final repository = context.read<IOnboardingRepository>();
+  final scope = context.read<IOnboardingScope>();
+  final repository = scope.onboardingRepository;
   return Response.json(body: await repository.getOnboarding());
 }
