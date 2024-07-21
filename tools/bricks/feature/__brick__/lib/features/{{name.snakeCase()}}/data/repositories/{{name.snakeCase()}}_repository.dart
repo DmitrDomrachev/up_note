@@ -1,4 +1,4 @@
-import 'package:flutter_template/features/{{name.snakeCase()}}/domain/repositories/i_{{name.snakeCase()}}_repository.dart';
+import 'package:up_note/features/{{name.snakeCase()}}/domain/repositories/i_{{name.snakeCase()}}_repository.dart';
 
 /// {@template {{name.snakeCase()}}_repository.class}
 /// Implementation of [I{{name.pascalCase()}}Repository].
