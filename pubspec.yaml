@@ -7,10 +7,12 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  args: ^2.5.0
   dart_frog: ^1.0.0
   freezed: ^2.5.7
   freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
+  mysql_client: ^0.0.27
   shelf_cors_headers: ^0.1.5
 
 dev_dependencies:

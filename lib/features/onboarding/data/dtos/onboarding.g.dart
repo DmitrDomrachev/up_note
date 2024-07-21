@@ -22,12 +22,12 @@ OnboardingPageDto _$OnboardingPageDtoFromJson(Map<String, dynamic> json) =>
     OnboardingPageDto(
       title: json['title'] as String,
       description: json['description'] as String,
-      svgImage: json['svgImage'] as String,
+      svgImage: json['svg_image'] as String,
     );
 
 Map<String, dynamic> _$OnboardingPageDtoToJson(OnboardingPageDto instance) =>
     <String, dynamic>{
       'title': instance.title,
       'description': instance.description,
-      'svgImage': instance.svgImage,
+      'svg_image': instance.svgImage,
     };
