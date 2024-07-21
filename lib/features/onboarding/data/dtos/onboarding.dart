@@ -46,13 +46,16 @@ class OnboardingPageDto {
       _$OnboardingPageDtoFromJson(json);
 
   /// The title of the onboarding page.
+  @JsonKey(name: 'title')
   final String title;
 
   /// A brief description of what the user will learn or experience on
   /// this page.
+  @JsonKey(name: 'description')
   final String description;
 
   /// The path to the SVG image used in the onboarding page.
+  @JsonKey(name: 'svg_image')
   final String svgImage;
 
   /// Converts an instance of [OnboardingPageDto] to a JSON map.
