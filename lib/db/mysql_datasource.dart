@@ -1,13 +1,13 @@
 import 'package:mysql_client/mysql_client.dart';
-import 'package:up_note/features/onboarding/data/data_source/onboarding_datasource.dart';
+import 'package:up_note/db/i_mysql_datasource.dart';
 import 'package:up_note/features/onboarding/data/dtos/onboarding.dart';
 
-/// A MySQL implementation of the [IOnboardingDataSource] interface.
-class MysqlOnboardingDatasource implements IOnboardingDataSource {
-  /// Creates a new instance of [MysqlOnboardingDatasource].
+/// A MySQL implementation of the [IMysqlDataSource] interface.
+final class MysqlDataSource implements IMysqlDataSource {
+  /// Creates a new instance of [MysqlDataSource].
   ///
   /// The [pool] parameter is required and represents the MySQL connection pool.
-  MysqlOnboardingDatasource({
+  MysqlDataSource({
     required MySQLConnectionPool pool,
   }) : _pool = pool;
 
