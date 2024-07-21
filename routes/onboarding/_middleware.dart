@@ -1,4 +1,3 @@
-
 import 'package:dart_frog/dart_frog.dart';
 import 'package:up_note/features/app/di/app_scope.dart';
 import 'package:up_note/features/onboarding/di/onboarding_scope.dart';
