@@ -29,15 +29,4 @@ final class AppScope implements IAppScope {
 
   @override
   IMysqlDataSource get iMysqlDataSource => _iMysqlDataSource;
-  //   return provider<MySQLConnectionPool>(
-  //     (_) => _mySQLConnectionPool ??= MySQLConnectionPool(
-  //       host: Platform.environment['DB_HOST']!,
-  //       port: int.parse(Platform.environment['DB_PORT']!),
-  //       userName: Platform.environment['DB_USER']!,
-  //       password: Platform.environment['DB_PASSWORD'],
-  //       maxConnections: 10,
-  //       databaseName: Platform.environment['DB_NAME'],
-  //     ),
-  //   );
-  // }
 }
